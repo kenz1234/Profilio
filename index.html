@@ -27,7 +27,7 @@
             overflow-x: hidden;
         }
 
-      
+        /* Animated Background */
         .bg-animation {
             position: fixed;
             width: 100%;
@@ -53,7 +53,7 @@
             100% { transform: translate(50px, 50px); }
         }
 
- 
+        /* Floating Particles */
         .particle {
             position: fixed;
             width: 4px;
@@ -70,7 +70,7 @@
             50% { transform: translateY(-100vh) translateX(100px); }
         }
 
-
+        /* Navigation */
         nav {
             position: fixed;
             width: 100%;
@@ -128,7 +128,7 @@
             width: 100%;
         }
 
-
+        /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
@@ -244,7 +244,7 @@
             }
         }
 
-
+        /* Section Styles */
         section {
             padding: 100px 50px;
             max-width: 1200px;
@@ -260,7 +260,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-
+        /* About Section */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -319,7 +319,7 @@
             border-color: var(--primary);
         }
 
-
+        /* Experience Section */
         .timeline {
             position: relative;
             padding-left: 50px;
@@ -378,7 +378,7 @@
             margin-bottom: 10px;
         }
 
-
+        /* Projects Section */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -427,6 +427,7 @@
             color: var(--light);
         }
 
+        /* Contact Section */
         .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -523,7 +524,7 @@
             display: block;
         }
 
-
+        /* Footer */
         footer {
             text-align: center;
             padding: 30px;
@@ -556,7 +557,7 @@
             transform: translateY(-5px);
         }
 
-    
+        /* Responsive */
         @media (max-width: 768px) {
             nav {
                 padding: 15px 20px;
@@ -585,6 +586,7 @@
             }
         }
 
+        /* Scroll Animation */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -623,7 +625,7 @@
                 <img src="me.jpg" alt="Kenz M Saju" class="hero-profile-image">
             </div>
             <h1>Kenz M Saju</h1>
-            <h2>Data Science / Data Analyst</h2>
+            <h2>Data Scientist and Data Analyst</h2>
             <p class="hero-quote">"Data science isn't just about predicting the future—it's about uncovering the hidden patterns that explain the present."</p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -681,7 +683,17 @@
     <section id="projects" class="fade-in">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
-             <div class="project-card">
+            <div class="project-card">
+                <div class="project-title"> ML-Based Indian Agricultural Market Intelligence System  </div>
+                <p class="project-description">Built a large-scale agricultural price prediction and market analytics platform using 3.6+ crore records, delivering 15–20% profit insights for farmers through ML-driven forecasting, interactive dashboards, and state-wise trend analysis.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">Plotly</span>
+                    <span class="tag">Streamlit</span>
+                </div>
+            </div>
+            <div class="project-card">
                 <div class="project-title">Job Selection & Identification</div>
                 <p class="project-description">Resume Parsing system using NLP & Machine Learning to extract candidate information, predict suitability, and automate interview invitations.</p>
                 <div class="project-tags">
@@ -692,8 +704,6 @@
                     <span class="tag">ML</span>
                 </div>
             </div>
-        
-             
             <div class="project-card">
                 <div class="project-title">Portfolio Website</div>
                 <p class="project-description">Modern, responsive portfolio website designed in Figma and developed with HTML, CSS, and JavaScript featuring smooth animations.</p>
@@ -704,7 +714,6 @@
                     <span class="tag">Figma</span>
                 </div>
             </div>
-            
         </div>
     </section>
 
@@ -732,7 +741,7 @@
                     <div class="contact-icon">📍</div>
                     <div>
                         <div style="font-weight: bold;">Location</div>
-                        <div style="color: var(--gray);">Kerala, India</div>
+                        <div style="color: var(--gray);">Kottayam, Kerala, India</div>
                     </div>
                 </a>
                 <a href="https://www.linkedin.com/in/kenz-m-saju/" target="_blank" class="contact-item" style="text-decoration: none; color: inherit;">
@@ -858,7 +867,7 @@
                 console.log('Form submitted:', data);
                 console.log('All messages:', window.contactMessages);
                 
-                formStatus.textContent = 'This method is currently unavailable!! please contact me through email or LinkedIn.';
+                formStatus.textContent = 'This method is currently not working!! please contact me through email or LinkedIn.';
                 formStatus.className = 'success';
                 contactForm.reset();
 
